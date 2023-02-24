@@ -10,9 +10,6 @@ Original file is located at
 #from google.colab import drive
 #drive.mount('/content/drive')
 
-import joblib as jb 
-modelo = jb.load('/wendygomes/aplicativo/modelo.pk1')
-
 #!pip install streamlit
 
 ##streamlit
@@ -22,7 +19,7 @@ import pandas as pd
 import streamlit as st 
 import joblib as jb
 
-model = jb.load('/wendygomes/aplicativo/modelo.pk1')
+model = jb.load('modelo.pk1')
 
 #Cabecalho
 st.subheader("Informações dos dados")
