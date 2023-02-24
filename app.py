@@ -7,11 +7,11 @@ Original file is located at
     https://colab.research.google.com/drive/1fnVZURP3SQLcEnL4ZJTXrOies88PflRJ
 """
 
-from google.colab import drive
-drive.mount('/content/drive')
+#from google.colab import drive
+#drive.mount('/content/drive')
 
 import joblib as jb 
-modelo = jb.load('/content/drive/MyDrive/UFBA/PROJETO/MEU TCC/modelo.pk1')
+modelo = jb.load('/github.com/wendygomes/aplicativo/modelo.pk1')
 
 #!pip install streamlit
 
@@ -22,7 +22,7 @@ import pandas as pd
 import streamlit as st 
 import joblib as jb
 
-model = jb.load('/content/drive/MyDrive/UFBA/PROJETO/MEU TCC/modelo.pk1')
+model = jb.load('/github.com/wendygomes/aplicativo/modelo.pk1')
 
 #Cabecalho
 st.subheader("Informações dos dados")
