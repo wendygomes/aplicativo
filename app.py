@@ -13,7 +13,7 @@ drive.mount('/content/drive')
 import joblib as jb 
 modelo = jb.load('/content/drive/MyDrive/UFBA/PROJETO/MEU TCC/modelo.pk1')
 
-!pip install streamlit
+#!pip install streamlit
 
 ##streamlit
 ## Idade,TOT,SVD,PAI,Infeccao,CVC,Sedacao,Comorbidade,SAPS,Temperatura,PAS,FC,Creatinina,DVAInternacao
