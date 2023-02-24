@@ -11,7 +11,7 @@ Original file is located at
 #drive.mount('/content/drive')
 
 import joblib as jb 
-modelo = jb.load('/github.com/wendygomes/aplicativo/modelo.pk1')
+modelo = jb.load('/wendygomes/aplicativo/modelo.pk1')
 
 #!pip install streamlit
 
@@ -22,7 +22,7 @@ import pandas as pd
 import streamlit as st 
 import joblib as jb
 
-model = jb.load('/github.com/wendygomes/aplicativo/modelo.pk1')
+model = jb.load('/wendygomes/aplicativo/modelo.pk1')
 
 #Cabecalho
 st.subheader("Informações dos dados")
