@@ -27,7 +27,7 @@ model = jb.load('modelo.pk1')
 st.subheader("Informações dos dados")
 
 #Nome do usuário
-user_input = st.sidebar.text_input("Digite seu nome")
+user_input = st.sidebar.text_input("Nome do paciente")
 st.write("Paciente: ", user_input)
 
 def get_user_data():
