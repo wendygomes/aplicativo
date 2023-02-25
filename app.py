@@ -32,7 +32,7 @@ st.write("Paciente: ", user_input)
 
 def get_user_data():
     Idade = st.sidebar.slider("Idade", 18,120,30)
-    TOT = st.sidebar.radio("TOT", ["sim", "nao"])
+    TOT = st.sidebar.radio("TOT", 0,1,0)
     SVD = st.sidebar.radio("SVD", ["sim", "nao"])
     PAI = st.sidebar.radio("PAI", ["sim", "nao"])
     Infeccao = st.sidebar.radio("Infeccao", ["sim", "nao"])
