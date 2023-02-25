@@ -74,6 +74,3 @@ st.write(prediction)
 #0 = não tem pretensão a ter
 #1 = tem pretensão
 
-#!streamlit run /usr/local/lib/python3.8/dist-packages/sklearn/base.py --server.fileWatcherType = none
-
-#!streamlit run /content/drive/MyDrive/UFBA/PROJETO/MEU TCC/app.py --server.fileWatcherType = none
