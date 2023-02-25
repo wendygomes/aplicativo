@@ -70,7 +70,7 @@ def get_user_data():
 user_input_variables = get_user_data()
 
 #Gráfico
-graf = st.bar_chart(user_input_variables)
+#graf = st.bar_chart(user_input_variables)
 
 st.subheader("Dados do usuario")
 st.write(user_input_variables)
