@@ -66,9 +66,7 @@ def get_user_data():
       features = pd.concat([features, pd.get_dummies(features[coluna], prefix=coluna)], axis=1)
       features = features.drop(columns=[coluna])
       features.at[0,f"{coluna}_{user_data[coluna]}"] = 0 if(user_data[coluna] == "nao") else 1   
-    ["TOT"] = ["TOT_sim"]
-    ["TOT"] = ["TOT_nao"]
-    return features
+      return features
 
 user_input_variables = get_user_data()
 
