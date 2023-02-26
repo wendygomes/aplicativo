@@ -68,7 +68,7 @@ def get_user_data():
       features.at[0,f"{coluna}_{user_data[coluna]}"] = 0 if(user_data[coluna] == "nao") else 1    
     return features
 
-user_input_variables = features
+user_input_variables = features()
 
 #Gráfico
 #graf = st.bar_chart(user_input_variables)
