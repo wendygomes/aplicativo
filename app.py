@@ -46,26 +46,21 @@ def get_user_data():
     Creatinina = st.sidebar.slider("Creatinina", 0.1,20.0,1.1)
     
     user_data = {"Idade": Idade,
-                "TOT": TOT,
-                "SVD": SVD,
-                "PAI": PAI,
-                "Infeccao": Infeccao,
-                "CVC": CVC,
-                "Sedacao": Sedacao,
-                "Comorbidade": Comorbidade,
+                "TOT": 0 if(TOT == "nao") else 1,
+                "SVD": 0 if(SVD == "nao") else 1,
+                "PAI": 0 if(PAI == "nao") else 1,
+                "Infeccao": 0 if(Infeccao == "nao") else 1,
+                "CVC": 0 if(CVC == "nao") else 1,
+                "Sedacao": 0 if(Sedacao == "nao") else 1,
+                "Comorbidade": 0 if(Comorbidade == "nao") else 1,
                 "SAPS": SAPS,
                 "Temperatura": Temperatura,
                 "PAS": PAS,
                 "FC": FC,
                 "Creatinina": Creatinina,
                 }
+                
     features = pd.DataFrame(user_data, index = [0])
-                           
-    categoriaColuna = ["TOT", "SVD", "PAI", "Infeccao", "CVC", "Sedacao", "Comorbidade"]
-    for coluna in categoriaColuna:
-      features = pd.concat([features, pd.get_dummies(features[coluna], prefix=coluna)], axis=1)
-      features = features.drop(columns=[coluna])
-      features.at[0,f"{coluna}_{user_data[coluna]}"] = 0 if(user_data[coluna] == "nao") else 1   
     return features
 
 user_input_variables = get_user_data()
